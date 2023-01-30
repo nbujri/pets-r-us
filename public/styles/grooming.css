@@ -1,0 +1,82 @@
+/* hero section */
+.hero-image {
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-big-text {
+  font-size: 64px;
+  margin-bottom: 12px;
+}
+
+.hero-content {
+  display: flex;
+  /* have content stacked */
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  /* center horizontally */
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* contrasting bg for h2 */
+.transparent-bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+/* make link look like button */
+.pricing-btn {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  padding: 4px 0;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #86efac;
+  text-decoration: none;
+}
+
+.pricing-btn:hover {
+  cursor: pointer;
+  background-color: #4ade80;
+}
+
+/* keep link black */
+.pricing-btn:visited {
+  color: #000;
+}
+
+/* pricing section */
+.pricing {
+  height: 80vh;
+  background-color: #111827;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing h2 {
+  color: #e0f2fe;
+  font-size: 64px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.price-card {
+  background-color: #e0f2fe;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-card div {
+  font-size: 32px;
+  margin: 12px 0;
+  text-align: center;
+}

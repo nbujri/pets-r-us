@@ -1,36 +1,3 @@
-/* remove some default styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* header styles */
-.header {
-  background-color: #111827;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px 0;
-}
-
-.logo {
-  color: #e0f2fe;
-  font-size: 48px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 15px;
-}
-
-.nav-link {
-  color: #e0f2fe;
-  font-size: 24px;
-  margin-top: 10px;
-  text-decoration: none;
-}
-
 /* hero section styles */
 .hero-image {
   height: 100vh;
@@ -234,12 +201,4 @@
 
 #input-message {
   resize: none;
-}
-
-/* footer */
-.footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 50px;
 }

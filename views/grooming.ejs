@@ -4,11 +4,87 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/grooming.css" />
+    <link rel="stylesheet" href="./styles/shared.css" />
+
     <title>Pets-R-Us | Grooming</title>
   </head>
   <body>
     <div class="container">
-      <h1>Grooming</h1>
+      <!-- navigation -->
+      <header class="header">
+        <h1 class="logo">Pets-R-Us</h1>
+        <nav class="nav-links">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/grooming" class="nav-link">Grooming</a>
+          <a href="#" class="nav-link">Training</a>
+          <a href="#" class="nav-link">Boarding</a>
+          <a href="#" class="nav-link">Register</a>
+          <a href="#" class="nav-link">Customers</a>
+          <a href="#" class="nav-link">Appointments</a>
+        </nav>
+      </header>
+
+      <!-- hero -->
+      <section class="hero">
+        <div class="image">
+          <img
+            src="./images/autri-taheri-retriever.jpg"
+            alt="dog being groomed"
+            class="hero-image"
+          />
+        </div>
+        <div class="hero-content">
+          <div class="transparent-bg">
+            <h2 class="hero-big-text">Pets-R-Us</h2>
+            <h2 class="hero-big-text">Grooming</h2>
+          </div>
+          <a href="#pricing" class="pricing-btn">CHECK PRICING</a>
+        </div>
+      </section>
+
+      <!-- pricing -->
+      <section class="pricing" id="pricing">
+        <h2>PRICING</h2>
+        <div class="price-card">
+          <div class="category">
+            <div class="price">Spa Bath ($50)</div>
+            <div class="description">Includes brushing and nail trimming</div>
+            <hr />
+          </div>
+          <div class="category">
+            <div class="price">Spa Trim ($20)</div>
+            <div class="description">Bath with feet and face trimming</div>
+            <hr />
+          </div>
+          <div class="category">
+            <div class="price">Full Groom ($80)</div>
+            <div class="description">
+              The full package! Spa bath with a full haircut and trimming
+            </div>
+            <hr />
+          </div>
+          <div class="category">
+            <div class="price">Teeth Cleaning ($15)</div>
+            <div class="description">
+              Keep your dogs teeth clean and gums healthy!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="credits">
+          IMAGES FROM <a href="https://unsplash.com">UNSPLASH</a>
+        </div>
+        <div>
+          Developed by
+          <a href="https://github.com/nbujri/pets-r-us">Ngi Bujri</a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
