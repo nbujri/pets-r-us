@@ -12,18 +12,147 @@
   </head>
   <body>
     <div class="container">
+      <!-- navigation -->
       <header class="header">
-        <h1>Pets-R-Us</h1>
-        <div class="links">
-          <a href="/">Home</a>
-          <a href="/grooming">Grooming</a>
-          <a href="#">Training</a>
-          <a href="#">Boarding</a>
-          <a href="#">Register</a>
-          <a href="#">Customers</a>
-          <a href="#">Appointments</a>
-        </div>
+        <h1 class="logo">Pets-R-Us</h1>
+        <nav class="nav-links">
+          <a href="/" class="nav-link">Home</a>
+          <a href="/grooming" class="nav-link">Grooming</a>
+          <a href="#" class="nav-link">Training</a>
+          <a href="#" class="nav-link">Boarding</a>
+          <a href="#" class="nav-link">Register</a>
+          <a href="#" class="nav-link">Customers</a>
+          <a href="#" class="nav-link">Appointments</a>
+        </nav>
       </header>
+
+      <!-- hero -->
+      <section class="hero">
+        <div class="image">
+          <img
+            src="./images/alvan-nee-dogs.jpg"
+            alt="two dogs playing"
+            class="hero-image"
+          />
+        </div>
+        <div class="hero-content">
+          <h2 class="hero-big-text">Pets-R-Us</h2>
+          <a href="#" class="book-btn">Book Now</a>
+        </div>
+      </section>
+
+      <!-- dog of the week -->
+      <section class="dog-of-week section-50">
+        <img
+          src="./images/ramiro-pianarosa-terrier.jpg"
+          alt="terrier"
+          class="dotw-img"
+        />
+        <div class="dog-info">
+          <p>Name: Terry</p>
+          <p>Age: 3</p>
+          <p>Favorite Toy: Tennis Ball</p>
+          <p>Favorite Activity: Playing Catch</p>
+        </div>
+      </section>
+
+      <!-- testimonials -->
+      <section class="testimonials section-50">
+        <h2 class="testimonial-header">Customer Testimonials</h2>
+        <div class="testimonial">
+          <p class="testimonial-text">
+            Pets-R-Us are the go to people for anyone that loves their dogs
+          </p>
+          <p class="customer">- John</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">
+            Nobody beats the love and care Pets-R-Us gives to our dogs
+          </p>
+          <p class="customer">- Jane</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">
+            The staff are the kindest people I have ever met. They will make
+            sure your pets are will taken care of
+          </p>
+          <p class="customer">- Julie</p>
+        </div>
+      </section>
+
+      <!-- locations -->
+      <section class="locations section-50">
+        <h2>Visit Us or Call!</h2>
+        <div class="card-container">
+          <div class="location-card">
+            <div class="address">3200 Vegas Plaza Dr, Vegas, NC</div>
+            <div class="phone">(702) 696-1282</div>
+          </div>
+          <div class="location-card">
+            <div class="address">580 E Windmill Ln, Vegas, NC</div>
+            <div class="phone">(702) 837-0779</div>
+          </div>
+          <div class="location-card">
+            <div class="address">4811 S Rainbow Blvd, Vegas, NC</div>
+            <div class="phone">(702) 646-0129</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- operation hours -->
+      <section class="hours section-50">
+        <h2>Operation Hours</h2>
+        <div class="time">Monday: 6AM - 8PM</div>
+        <div class="time">Tuesday: 6AM - 8PM</div>
+        <div class="time">Wednesday: 6AM - 8PM</div>
+        <div class="time">Thursday: 6AM - 8PM</div>
+        <div class="time">Friday: 6AM - 8PM</div>
+        <div class="time">Saturday: 6AM - 5PM</div>
+        <div class="time">Sunday: 6AM - 5PM</div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact section-50">
+        <h2>Get In Touch!</h2>
+        <div class="contact-card">
+          <div class="field">
+            <label for="input-fname">First Name:</label>
+            <input type="text" id="input-name" />
+          </div>
+          <div class="field">
+            <label for="input-lname">Last Name:</label>
+            <input type="text" id="input-lname" />
+          </div>
+          <div class="field">
+            <label for="input-email">Email:</label>
+            <input type="email" id="input-email" />
+          </div>
+          <div class="field">
+            <label for="input-phone">Phone:</label>
+            <input type="text" id="input-phone" />
+          </div>
+          <div class="field">
+            <label for="input-message">Message:</label>
+            <textarea
+              name="input-message"
+              id="input-message"
+              cols="50"
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="credits">
+          IMAGES FROM <a href="https://unsplash.com">UNSPLASH</a>
+        </div>
+        <div>
+          Developed by
+          <a href="https://github.com/nbujri/pets-r-us">Ngi Bujri</a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

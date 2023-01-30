@@ -1,1 +1,245 @@
+/* remove some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* header styles */
+.header {
+  background-color: #111827;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  color: #e0f2fe;
+  font-size: 48px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  color: #e0f2fe;
+  font-size: 24px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+/* hero section styles */
+.hero-image {
+  height: 100vh;
+  width: 100%;
+}
+
+.hero-big-text {
+  font-size: 64px;
+  margin-bottom: 12px;
+}
+
+.hero-content {
+  display: flex;
+  /* have content stacked */
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  /* center horizontally */
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* make booking link look like a button */
+.book-btn {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  padding: 4px 0;
+  border: 1px solid #000;
+  border-radius: 8px;
+  background-color: #86efac;
+  text-decoration: none;
+}
+
+.book-btn:hover {
+  cursor: pointer;
+  background-color: #4ade80;
+}
+
+/* keep link black */
+.book-btn:visited {
+  color: #000;
+}
+
+/* make sections half of viewport height */
+.section-50 {
+  height: 50vh;
+}
+
+/* dog of the week section */
+.dog-of-week {
+  background-color: #f0fdf4;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dotw-img {
+  height: 80%;
+  width: 50%;
+  /* make corners round */
+  border-radius: 8px;
+}
+
+.dog-info {
+  background-color: #bbf7d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.testimonials {
+  background-color: #111827;
+  /* stack testimonials */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e0f2fe;
+}
+
+.testimonial-header {
+  font-size: 64px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.testimonial {
+  /* make quote and name stack */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  /* add space to left and right */
+  padding: 0 50px;
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 32px;
+  font-style: italic;
+}
+
+.customer {
+  font-size: 24px;
+  align-self: center;
+}
+
+/* locations styles */
+.locations {
+  background-color: #f0fdf4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.locations h2 {
+  font-size: 64px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 24px;
+}
+
+.location-card {
+  background-color: #bbf7d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  padding: 0 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.address {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.phone {
+  font-size: 28px;
+}
+
+/* operation hours section */
+.hours {
+  background-color: #111827;
+  color: #e0f2fe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hours h2 {
+  font-size: 64px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.time {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+/* contact section */
+.contact {
+  background-color: #bbf7d0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2 {
+  font-size: 64px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.contact-card {
+  background-color: #4ade80;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#input-message {
+  resize: none;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
