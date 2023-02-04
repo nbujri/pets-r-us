@@ -1,3 +1,8 @@
+// title: index.js
+// author: ngi bujri
+// date: february 4 2023
+// description: express server
+
 "use strict";
 
 // imports
@@ -21,5 +26,6 @@ app.get("/grooming", (req, res) => {
   res.render("grooming");
 });
 
+// listen on port 3000
 const port = process.env.port || 3000;
 app.listen(port, () => console.info(`listening on port ${port}!`));

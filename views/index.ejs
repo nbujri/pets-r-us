@@ -1,3 +1,10 @@
+<!-- 
+  title: index.ejs
+  author: ngi bujri
+  date: february 4 2023
+  description: landing page
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,20 +20,8 @@
   </head>
   <body>
     <div class="container">
-      <!-- navigation -->
-      <header class="header">
-        <h1 class="logo">Pets-R-Us</h1>
-        <nav class="nav-links">
-          <a href="/" class="nav-link">Home</a>
-          <a href="/grooming" class="nav-link">Grooming</a>
-          <a href="#" class="nav-link">Training</a>
-          <a href="#" class="nav-link">Boarding</a>
-          <a href="#" class="nav-link">Register</a>
-          <a href="#" class="nav-link">Customers</a>
-          <a href="#" class="nav-link">Appointments</a>
-        </nav>
-      </header>
-
+      <!-- header -->
+      <%- include('./partials/header.ejs') %>
       <!-- hero -->
       <section class="hero">
         <div class="image">
@@ -145,15 +140,7 @@
       </section>
 
       <!-- footer -->
-      <footer class="footer">
-        <div class="credits">
-          IMAGES FROM <a href="https://unsplash.com">UNSPLASH</a>
-        </div>
-        <div>
-          Developed by
-          <a href="https://github.com/nbujri/pets-r-us">Ngi Bujri</a>
-        </div>
-      </footer>
+      <%- include('./partials/footer.ejs') %>
     </div>
   </body>
 </html>
