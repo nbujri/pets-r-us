@@ -18,7 +18,8 @@ description: styles that are shared between pages
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0;
+  justify-content: center;
+  height: 150px;
 }
 
 .logo {
@@ -36,6 +37,11 @@ description: styles that are shared between pages
   font-size: 24px;
   margin-top: 10px;
   text-decoration: none;
+}
+
+/* show underline when hovering over nav links */
+.nav-link:hover {
+  text-decoration: underline;
 }
 
 /* footer */
