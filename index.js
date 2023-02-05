@@ -18,12 +18,24 @@ app.set("view engine", "ejs");
 // path for public folder
 app.use(express.static(path.join(__dirname, "public")));
 
+// render landing page
 app.get("/", (req, res) => {
   res.render("index");
 });
 
+// render grooming page
 app.get("/grooming", (req, res) => {
   res.render("grooming");
+});
+
+// render training page
+app.get("/training", (req, res) => {
+  res.render("training");
+});
+
+// render boarding page
+app.get("/boarding", (req, res) => {
+  res.render("boarding");
 });
 
 // listen on port 3000

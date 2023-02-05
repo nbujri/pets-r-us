@@ -1,0 +1,82 @@
+<!-- 
+  title: boarding.ejs
+  author: ngi bujri
+  date: february 4 2023
+  description: boarding page
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/boarding.css" />
+
+    <title>Pets-R-Us | Boarding</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <%- include('./partials/header.ejs') %>
+
+      <!-- boarding info -->
+      <section class="boarding-info">
+        <div class="top">
+          <div class="large-text">Boarding</div>
+        </div>
+        <div class="bottom">
+          <div class="left">
+            <img
+              src="./images/charlesdeluvio-sleeping-dog.jpg"
+              alt="yawning dog"
+              class="img"
+            />
+          </div>
+          <div class="right">
+            <h1>header</h1>
+            <p class="info-p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+              perspiciatis aspernatur quaerat maiores aliquid libero placeat.
+              Culpa doloribus libero iusto numquam vitae id, odit sint
+              exercitationem? Facilis deleniti vero hic error corrupti voluptate
+              libero nam sit nihil illo, laudantium fugiat aperiam autem culpa
+              animi saepe iste, obcaecati amet nisi labore.
+            </p>
+            <p class="info-p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+              perspiciatis aspernatur quaerat maiores aliquid libero placeat.
+              Culpa doloribus libero iusto numquam vitae id, odit sint
+              exercitationem? Facilis deleniti vero hic error corrupti voluptate
+              libero nam sit nihil illo, laudantium fugiat aperiam autem culpa
+              animi saepe iste, obcaecati amet nisi labore.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- boarding pricing -->
+      <section class="pricing">
+        <div class="pricing-top">
+          <div class="pricing-text">Pricing</div>
+        </div>
+        <div class="bottom">
+          <div class="cards-container">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <%- include('./partials/footer.ejs') %>
+    </div>
+  </body>
+</html>

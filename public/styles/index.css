@@ -178,7 +178,7 @@ description: styles for index.ejs
 
 /* contact section */
 .contact {
-  background-color: #bbf7d0;
+  background-color: #f0fdf4;
   display: flex;
   flex-direction: column;
   align-items: center;

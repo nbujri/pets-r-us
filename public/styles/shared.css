@@ -12,6 +12,11 @@ description: styles that are shared between pages
   box-sizing: border-box;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 /* header styles */
 .header {
   background-color: #111827;
@@ -20,6 +25,11 @@ description: styles that are shared between pages
   align-items: center;
   justify-content: center;
   height: 150px;
+  width: 100%;
+  /* fix header to top of page */
+  position: sticky;
+  z-index: 1;
+  top: 0;
 }
 
 .logo {
@@ -50,4 +60,7 @@ description: styles that are shared between pages
   justify-content: space-around;
   align-items: center;
   height: 50px;
+  width: 100%;
+  /* keep footer at bottom */
+  align-self: flex-end;
 }
