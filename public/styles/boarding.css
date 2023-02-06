@@ -68,8 +68,46 @@ h1 {
   justify-content: center;
 }
 
+.pricing-bottom {
+  padding: 0 50px 50px;
+}
+
 .pricing-text {
   font-size: 64px;
   color: #e0f2fe;
   padding: 50px 0;
+}
+
+.cards-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0f2fe;
+  height: 150px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.description,
+.price {
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+hr {
+  margin: 10px 0;
 }
