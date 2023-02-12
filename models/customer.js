@@ -7,7 +7,7 @@ description: customer model
 
 "use strict";
 
-// const mongoose = require("mongoose");
+const mongoose = require("mongoose");
 
 let Customer = new mongoose.Schema({
   customerID: { type: String, required: true, unique: true },
