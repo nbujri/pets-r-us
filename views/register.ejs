@@ -1,0 +1,57 @@
+<!--
+  title: register.ejs
+  author: ngi bujri
+  date: february 11 2023
+  description: registration page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/register.css" />
+
+    <title>Pets-R-Us | User Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <%- include('./partials/header.ejs') %>
+
+      <!-- registration form -->
+      <div class="registration-form">
+        <div class="card">
+          <div class="card-content">
+            <div class="big-text">REGISTER</div>
+            <form action="/register-user" method="post" class="form">
+              <div class="field">
+                <label for="customer-id">Customer ID</label>
+                <input
+                  type="text"
+                  id="customer-id"
+                  name="customerID"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="field">
+                <button class="submit" type="submit">Create Account</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <%- include('./partials/footer.ejs') %>
+    </div>
+  </body>
+</html>

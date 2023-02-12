@@ -12,7 +12,13 @@ description: styles that are shared between pages
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .container {
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -56,11 +62,19 @@ description: styles that are shared between pages
 
 /* footer */
 .footer {
+  background-color: #111827;
+  color: #bbf7d0;
+  border-top: 1px solid #bbf7d0;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 50px;
+  /* height: 200px; */
   width: 100%;
+  padding: 30px 0;
   /* keep footer at bottom */
-  align-self: flex-end;
+  /* align-self: flex-end; */
+}
+
+.footer a:visited {
+  color: #bbf7d0;
 }
