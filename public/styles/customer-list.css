@@ -1,0 +1,63 @@
+/* 
+  title: customer-list.css
+  author: ngi bujri
+  date: february 18 2023
+  description: styles for customer-list.ejs
+*/
+
+.background {
+  height: 100%;
+  background-color: #bbf7d0;
+  overflow: hidden;
+}
+
+h1 {
+  background-color: #111827;
+  color: #bbf7d0;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.table {
+  width: 60%;
+  margin: 30px auto;
+  border: 1px solid #111827;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 16px 0;
+}
+
+th {
+  font-size: 32px;
+  background-color: #111827;
+  color: #bbf7d0;
+}
+
+.th-id {
+  border-right: 1px solid #bbf7d0;
+}
+
+.info {
+  font-size: 24px;
+  text-align: center;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #111827;
+}
+
+.border-right {
+  border-right: 1px solid #111827;
+}
+
+.table tr:nth-child(odd) {
+  background-color: #bbf7d0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}

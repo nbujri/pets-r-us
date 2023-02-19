@@ -1,0 +1,48 @@
+<!-- 
+  title: customer-list.ejs
+  author: ngi bujri
+  date: february 18 2023
+  description: display of existing customers
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/customer-list.css" />
+
+    <title>Pets-R-Us | Customers</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <%- include('./partials/header.ejs') %>
+
+      <h1>Customers</h1>
+
+      <% if (customers) { %>
+      <table class="table">
+        <tr>
+          <th class="th-id">Customer ID</th>
+          <th>Email</th>
+        </tr>
+        <% customers.forEach(customer => { %>
+        <tr class="border-bottom">
+          <td class="info border-right"><%= customer.customerID %></td>
+          <td class="info"><%= customer.email %></td>
+        </tr>
+        <% }) %>
+      </table>
+
+      <% } %>
+
+      <!-- footer -->
+      <%- include('./partials/footer.ejs') %>
+    </div>
+  </body>
+</html>

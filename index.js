@@ -9,6 +9,7 @@
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
+
 // mongoose model imports
 const Customer = require("./models/customer");
 
@@ -79,6 +80,18 @@ app.post("/register-user", (req, res, next) => {
       next(error);
     } else {
       res.redirect("/");
+    }
+  });
+});
+
+// render customer-list.ejs
+app.get("/customer-list", (req, res) => {
+  Customer.find({}, (error, customers) => {
+    if (error) {
+      console.log(error);
+      next(error);
+    } else {
+      res.render("customer-list", { customers: customers });
     }
   });
 });
