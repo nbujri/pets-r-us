@@ -1,0 +1,54 @@
+/* 
+  title: booking.css
+  author: ngi bujri
+  date: february 26 2023
+  description: styles for booking.ejs
+*/
+
+h1 {
+  text-align: center;
+  font-size: 64px;
+  padding-top: 30px;
+}
+
+.form,
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form,
+.field input,
+#service,
+.btn {
+  border-radius: 8px;
+}
+
+.form {
+  background-color: #bbf7d0;
+  width: 50%;
+  padding: 30px 0;
+  margin: auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.field {
+  font-size: 18px;
+  width: 50%;
+}
+
+.field input,
+#service {
+  height: 35px;
+  padding: 8px;
+}
+
+.btn {
+  background-color: #111827;
+  color: #bbf7d0;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 40px;
+  padding: 8px 18px;
+}

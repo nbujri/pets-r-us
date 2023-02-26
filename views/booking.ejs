@@ -1,0 +1,60 @@
+<!-- 
+  title: appointment.ejs
+  author: ngi bujri
+  date: february 26 2023
+  description: form to book appointments
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/booking.css" />
+    <link rel="stylesheet" href="./styles/shared.css" />
+
+    <title>Pets-R-Us | Book Appointment</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <%- include("./partials/header.ejs") %>
+
+      <h1>Book An Appointment</h1>
+
+      <form action="/book-appointment" method="post" class="form">
+        <div class="field">
+          <label for="customer-id">Customer ID</label>
+          <input type="text" name="customerID" id="customer-id" required />
+        </div>
+        <div class="field">
+          <label for="first-name">First Name</label>
+          <input type="text" name="firstName" id="first-name" required />
+        </div>
+        <div class="field">
+          <label for="last-name">Last Name</label>
+          <input type="text" name="lastName" id="last-name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" required />
+        </div>
+        <div class="field">
+          <label for="service">Service</label>
+          <select name="service" id="service" required>
+            <% services.forEach((service) => { %>
+            <option value="'<%= service.value %>'"><%= service.text %></option>
+            <% }) %>
+          </select>
+        </div>
+        <button type="submit" class="btn">BOOK APPOINTMENT</button>
+      </form>
+
+      <!-- footer -->
+      <%- include("./partials/footer.ejs") %>
+    </div>
+  </body>
+</html>

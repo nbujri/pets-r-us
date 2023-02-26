@@ -9,9 +9,11 @@
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
+const fs = require("fs");
 
 // mongoose model imports
 const Customer = require("./models/customer");
+const Appointment = require("./models/appointment");
 
 const app = express();
 
@@ -92,6 +94,34 @@ app.get("/customer-list", (req, res) => {
       next(error);
     } else {
       res.render("customer-list", { customers: customers });
+    }
+  });
+});
+
+// render appointment.ejs
+app.get("/booking", (req, res) => {
+  // get services.json and parse
+  const file = fs.readFileSync("./public/data/services.json");
+  const services = JSON.parse(file);
+
+  res.render("booking", { services: services });
+});
+
+app.post("/book-appointment", (req, res, next) => {
+  const booking = new Appointment({
+    customerID: req.body.customerID,
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    service: req.body.service,
+  });
+
+  Appointment.create(booking, (error, newBooking) => {
+    if (error) {
+      console.log(error);
+      next(error);
+    } else {
+      res.redirect("/");
     }
   });
 });
