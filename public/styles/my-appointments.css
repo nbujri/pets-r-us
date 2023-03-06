@@ -1,0 +1,71 @@
+/* 
+  title: my-appointments.css
+  author: ngi bujri
+  date: march 5 2023
+  description: styles for my-appointments.ejs
+*/
+
+.card,
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: #bbf7d0;
+  width: 20%;
+  margin: 30px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+label {
+  font-size: 24px;
+}
+
+#email {
+  height: 30px;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.search-btn {
+  background-color: #111827;
+  color: #bbf7d0;
+  padding: 4px 20px;
+  font-size: 28px;
+  border: none;
+  border-radius: 8px;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+}
+
+.appointments-table {
+  width: 80%;
+  background-color: #111827;
+  color: #bbf7d0;
+  margin: 0 auto;
+  text-align: center;
+  padding: 8px;
+}
+
+th,
+td {
+  padding: 16px 0;
+}
+
+th {
+  font-size: 24px;
+  border-bottom: 1px solid #bbf7d0;
+}
+
+td {
+  font-size: 20px;
+}

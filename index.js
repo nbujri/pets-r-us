@@ -126,6 +126,21 @@ app.post("/book-appointment", (req, res, next) => {
   });
 });
 
+// render appointments page
+app.get("/my-appointments", (req, res) => {
+  res.render("my-appointments");
+});
+
+app.get("/api/appointments/:email", async (req, res, next) => {
+  Appointment.find({ email: req.params.email }, (err, appointments) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.json(appointments);
+    }
+  });
+});
+
 // listen on port 3000
 const port = process.env.port || 3000;
 app.listen(port, () => console.info(`listening on port ${port}!`));

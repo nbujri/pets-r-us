@@ -1,0 +1,84 @@
+<!-- 
+  title: my-appointments.ejs
+  author: ngi bujri
+  date: march 5 2023
+  description: display customer appointments by email
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/my-appointments.css" />
+
+    <title>Pets-R-Us | My Appointments</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <%- include('./partials/header.ejs') %>
+
+      <!-- search card -->
+      <div class="card">
+        <h1>Search Appointments</h1>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <button class="search-btn">Search</button>
+      </div>
+
+      <!-- appointments display -->
+      <div class="table-container"></div>
+
+      <!-- footer -->
+      <%- include('./partials/footer.ejs') %>
+    </div>
+
+    <script>
+      document
+        .querySelector(".search-btn")
+        .addEventListener("click", getAppointments);
+
+      // function to get appointments by email
+      function getAppointments() {
+        // get email
+        const email = document.querySelector("#email").value;
+
+        fetch(`/api/appointments/${email}`)
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+
+            // create HTML for table
+            let html = `<table class="appointments-table">
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Service</th>
+              </tr>`;
+
+            for (let appointment of data) {
+              html += `
+                <tr>
+                  <td>${appointment.firstName}</td>
+                  <td>${appointment.lastName}</td>
+                  <td>${appointment.email}</td>
+                  <td>${appointment.service}</td>
+                </tr>`;
+            }
+            // close table
+            html += "</table>";
+            document.querySelector(".table-container").innerHTML = html;
+          })
+          .catch((err) => console.log(err));
+      }
+    </script>
+  </body>
+</html>
